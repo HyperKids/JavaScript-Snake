@@ -296,7 +296,7 @@ SNAKE.Snake = SNAKE.Snake || (function() {
         */
         me.eatFood = function() {
             if (blockPool.length <= growthIncr) {
-                createBlocks(growthIncr*2);
+                createBlocks(growthIncr*10);
             }
             var blocks = blockPool.splice(0, growthIncr);
             
@@ -385,7 +385,7 @@ SNAKE.Snake = SNAKE.Snake || (function() {
         // Initialize
         // ---------------------------------------------------------------------
         
-        createBlocks(growthIncr*2);
+        createBlocks(growthIncr*10);
         xPosShift[0] = 0;
         xPosShift[1] = playingBoard.getBlockWidth();
         xPosShift[2] = 0;
